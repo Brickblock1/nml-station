@@ -1,0 +1,34 @@
+grf {
+	grfid: "TEST";
+	name: string(STR_NAME); 
+	desc: string(STR_DESC);
+	version: 0;
+	min_compatible_version: 0;
+}
+
+/*
+cargotable {
+	"PASS", "GOOD"
+}
+
+*/
+
+
+spriteset(hej) {
+[]
+}
+
+item (FEAT_STATIONS, station) {
+	property {
+		class: "HEEJ";
+		classname: string(STR_NAME);
+		cargo_random_triggers: [1];
+		name: string(STR_NAME);
+		draw_pylon_tiles: bitmask(1, 1, 1, 1, 0, 0, 0, 0);
+		
+	}
+	graphics {
+		availability: 1;
+		default: hej;
+	}
+}
