@@ -24,7 +24,7 @@ item (FEAT_STATIONS, station) {
 		classname: string(STR_NAME);
 		cargo_random_triggers: [1];
 		name: string(STR_NAME);
-		draw_pylon_tiles: bitmask(1, 1, 1, 1, 0, 0, 0, 0);
+		draw_pylon_tiles: bitmask(0, 1, 2, 3);
 		
 	}
 	graphics {
